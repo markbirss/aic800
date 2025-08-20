@@ -16,6 +16,7 @@ wget -c https://github.com/markbirss/linux-6.1.99/raw/refs/heads/main/linux-head
 dpkg -i linux-headers-6.1.99_6.1.99-3_armhf.deb
 
 sudo apt -y update; sudo apt -y install build-essential make cmake git network-manager
+sudo apt -y update; sudo apt -y install eject network-manager build-essential git make cmake iw wireless-tools rfkill
 
 su lyra
 cd ~/

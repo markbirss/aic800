@@ -36,10 +36,11 @@ adb shell nmcli dev wifi list
 ```
 requires installation of network-manger and
 
-/etc/netplan/01-network-manager-all.yaml
+cat <<EOF > /etc/netplan/01-network-manager-all.yaml
 network:
   version: 2
   renderer: NetworkManager
+EOF
 
 root@luckfox:~# cat /sys/firmware/devicetree/base/model
 Luckfox Lyra Zero W

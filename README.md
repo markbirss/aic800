@@ -33,3 +33,22 @@ adb shell nmcli dev wifi list
 
 ```
 
+```
+requires installation of network-manger and
+
+/etc/netplan/01-network-manager-all.yaml
+network:
+  version: 2
+  renderer: NetworkManager
+
+root@luckfox:~# cat /sys/firmware/devicetree/base/model
+Luckfox Lyra Zero W
+
+root@luckfox:~# 
+
+/media/user/storage/sdk$ adb push luckfox-config.latest /usr/bin/luckfox-config
+luckfox-config.latest: 1 file pushed, ...d. 169.3 MB/s (102478 bytes in 0.001s)
+
+```
+
+
